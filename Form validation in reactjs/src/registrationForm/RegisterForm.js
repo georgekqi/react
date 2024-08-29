@@ -10,12 +10,12 @@ class RegisterForm extends React.Component {
         errors: {}
       }
 
-      this.handleChange = this.handleChange.bind(this);
-      this.submituserRegistrationForm = this.submituserRegistrationForm.bind(this);
+      // this.handleChange = this.handleChange.bind(this);
+      // this.submituserRegistrationForm = this.submituserRegistrationForm.bind(this);
 
     };
 
-    handleChange(e) {
+    handleChange = (e) => {
       let fields = this.state.fields;
       fields[e.target.name] = e.target.value;
       this.setState({
